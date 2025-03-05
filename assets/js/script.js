@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Fetch carousel data
-  fetch("/data-homepage.json")
+  fetch("../../data-homepage.json")
     .then(response => response.json())
     .then(dataFound => {
       const container = $("#header-carousel .carousel-inner");
