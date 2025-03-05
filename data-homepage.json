@@ -1,0 +1,22 @@
+{
+    "datalist":{
+        "carousel":[
+            {"imgpath":"/assets/images/carousel/slide1.jpg",
+                "imgplaceholder":"v",
+                "imgdesc":"Bootcamp robotika Usk",
+                "imglink":"#"},
+            {"imgpath":"/assets/images/carousel/slide2.jpg",
+                "imgplaceholder":"x",
+                "imgdesc":"lorem ipsum  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias!",
+                "imglink":"#"},
+            {"imgpath":"/assets/images/carousel/slide3.jpg",
+                "imgplaceholder":"y",
+                "imgdesc":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias!",
+                "imglink":"#"},
+            {"imgpath":"/assets/images/carousel/slide4.jpg",
+                "imgplaceholder":"z",
+                "imgdesc":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias!",
+                "imglink":"#"}
+        ]
+    }  
+}
