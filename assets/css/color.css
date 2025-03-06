@@ -101,6 +101,7 @@
 /* nav btn*/
 :root {
   --navbar-bg: rgba(248, 249, 250, 0.875);
+  --offcanvas-bg: rgb(248, 249, 250) !important;
   --navbar-btn-orange: #FF6D33;
   --navbar-btn-text: #333;
   --navbar-btn-hover: #FF8533;
@@ -110,6 +111,7 @@
 
 [data-bs-theme="dark"] {
   --navbar-bg: rgba(33, 37, 41, 0.888);
+  --offcanvas-bg: rgb(33, 37, 41) !important;
   --navbar-btn-orange: #FF7F50;
   --navbar-btn-text: #F0F0F0;
   --navbar-btn-hover: #FFA07A;

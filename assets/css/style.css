@@ -37,7 +37,7 @@
 }
 
 #bd-theme{
-    z-index: 9999;
+    z-index: 1;
 }
 
 .custom-bc{
@@ -267,4 +267,10 @@
     .offcanvas .dropdown-toggle::after {
         margin-left: 10px;
     }
+    .offcanvas{
+      background-color: var(--offcanvas-bg);
+      opacity: 100% !important;
+      min-height: 50vh;
+    }
+    
 }
