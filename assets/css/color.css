@@ -1,6 +1,9 @@
 
 /* primary */
 :root, [data-bs-theme="light"]{
+  
+  --text-color: #1d1d1d;
+  --bg-color: #e3e6f0;
   --bs-primary: #9EC5FE; 
   --bs-secondary: #485F77; 
   --bs-tertiary: #E3F0E7; 
@@ -9,6 +12,9 @@
 }
 
 [data-bs-theme="dark"] {
+  
+  --text-color: #ffffff;
+  --bg-color: #021626;
   --bs-primary: #021626;
   --bs-secondary: #485F77;
   --bs-tertiary: #E5E3E4;
@@ -117,4 +123,21 @@
   --navbar-btn-hover: #FFA07A;
   --dropdown-bg: #212529;
   --dropdown-text: #F0F0F0;
+}
+
+
+/* tags berita */
+
+:root, [data-bs-theme="light"] {
+  --tag-bg: #eef0f3;
+  --tag-border: #e9ecef;
+  --tag-hover-bg: #e2e6ea;
+  --tag-hover-text: #212529;
+}
+
+[data-bs-theme="dark"] {
+  --tag-bg: #2d2d2d;
+  --tag-border: #444444;
+  --tag-hover-bg: #3a3a3a;
+  --tag-hover-text: #F0F0F0;
 }

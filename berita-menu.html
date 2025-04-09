@@ -1,18 +1,17 @@
-<!DOCTYPE html >
-<html lang="en" data-bs-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIMATEKTRO</title>
-    <link rel="shortcut icon" href="./assets/images/icons/HimatektroLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIMATEKTRO</title>
+  <link rel="shortcut icon" href="./assets/images/icons/HimatektroLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/color.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/carousel.css">
+  <link rel="stylesheet" href="./assets/css/color.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/berita.css">
 </head>
-<body >
+<body>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="bootstrap" viewBox="0 0 118 94">
       <title>Bootstrap</title>
@@ -83,10 +82,10 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 700px;">
                   <li class="nav-item mx-2">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="./berita-menu.html">Berita</a>
+                    <a class="nav-link active" href="./berita-menu.html">Berita</a>
                   </li>
                   <li class="nav-item mx-2">
                     <a class="nav-link" href="#">Event</a>
@@ -141,160 +140,85 @@
           </div>
         </div>
       </nav>
+      
     </header>
-    
-    <main>
-    
-      <div id="header-carousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-        </div>
-        <div class="carousel-inner">
-          
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!-- card awal-->
-      <div class="container" id="card">
-        <div class="card mt-3">
-            <img src="./assets/images/LogoHimatektro.png" class="card-img-top px-3" alt="hima">  
-          <div class="card-body ">
-            <h5 class="card-title text-center">SELAMAT DATANG</h5>
-            <p class="card-text text-center">SELAMAT DATANG DI WEBSITE HIMPUNAN MAHASISWA TEKNIK ELEKTRO
-              <br>
-              UNIVERSITAS SYIAH KUALA</p>
-          </div>
-        </div>
-      </div>
-     
-   
-      
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-    
-      <hr class="featurette-divider">
-      <div class="container marketing">
-        <!-- START THE FEATURETTES -->
-        <div class="container px-4 py-5">
-          <h2 class="pb-2 border-bottom">Fitur.</h2>
-          <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-            <div class="col d-flex flex-column align-items-start gap-2">
-              <h2 class="fw-bold text-body-emphasis">Untuk apa sih website ini?</h2>
-              <p class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique, quod perspiciatis porro architecto praesentium reiciendis vel officia quia soluta recusandae eum fugit illo iure, facilis voluptatibus amet harum dolore.</p>
-              <a href="#" class="btn btn-primary btn-lg">Cek Berita</a>
-            </div>
-      
-            <div class="col">
-              <div class="row row-cols-1 row-cols-sm-2 g-4">
-                <div class="col d-flex flex-column gap-2">
-                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3" style="width: fit-content; padding: 0.5rem;">
-                    <img src="./assets/images/icons/book.svg" alt="book" class="bi flex-shrink-0" style="width: 1em; height: 1em;">
+    <header class="berita-header">
+      <div class="container header-content">
+          <div class="row">
+              <div class="col-lg-8">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                      <div class="berita-date">
+                          Wednesday, April 9, 2025
+                      </div>
                   </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">Media Informasi</h4>
-                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-      
-                <div class="col d-flex flex-column gap-2">
-                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3" style="width: fit-content; padding: 0.5rem;">
-                    <img src="./assets/images/icons/telephone-fill.svg" alt="phone" class="bi flex-shrink-0" style="width: 1em; height: 1em;">
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">Kontak Cepat</h4>
-                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-      
-                <div class="col d-flex flex-column gap-2">
-                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3" style="width: fit-content; padding: 0.5rem;">
-                    <img src="./assets/images/icons/calendar-week.svg" alt="calendar" style="width: 1em; height: 1em;">
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">Jadwal & event</h4>
-                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-                </div>
-      
-                <div class="col d-flex flex-column gap-2">
-                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3" style="width: fit-content; padding: 0.5rem;">
-                    <img src="./assets/images/icons/newspaper.svg" alt="newspaper" style="width: 1em; height: 1em;">
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">Media Dokumentasi</h4>
-                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                  <h1 class="site-title">Berita Himatekro</h1>
+                  <p class="site-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas officiis nisi quia, dolor amet saepe odio adipisci repellendus dignissimos in, quibusdam molestias iste debitis autem hic iusto est minima?</p>
+                  
+                  <div class="tags-container">
+                    <a href="#" class="tag tag-penting">penting</a>
+                    <a href="#" class="tag tag-tropi">achievement</a>
+                    <a href="#" class="tag tag-hima">himpunan</a>
+                    <a href="#" class="tag tag-event">event</a>
+                    <a href="#" class="tag">umum</a>
                 </div>
               </div>
-            </div>
+              <div class="col-lg-4 mt-4 mt-lg-0" id="logo">
+                  <img src="./assets/images/icons/HimatektroLogo.png" alt="logo">
+              </div>
           </div>
-        </div>
       </div>
-        
-        <hr class="featurette-divider">
-      </div>
-        <!-- /END THE FEATURETTES -->
+  </header>
 
-        <!-- START THE LOGOS -->
-        <div class="container" id="logos">
-          <div class="row d-md-flex " >              
-            <div class="col-lg-4 g-5 mt-3 d-md-block d-flex flex-column align-items-center">
-              <a href="#" >
-                <img src="./assets/images/icons/UskLogo.png" alt="USK logo">
-              </a> 
-              <h2 class="fw-normal">USK</h2>
-              <p class="text-md-start text-center">Program Studi Teknik Elektro Universitas Syiah Kuala</p>
-                <p ><a class="btn btn-secondary" href="#">View details »</a></p>
-                   
-            </div><div class="col-lg-4 g-5 mt-3 d-md-block d-flex flex-column align-items-center">
-              <a href="#">
-                <img src="./assets/images/icons/IkatektroLogo.png" alt="ikatektro">
-              </a>
-              <h2 class="fw-normal">IKATEKTRO</h2>
-              <p class="text-md-start text-center">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</p>
-                <p ><a class="btn btn-secondary" href="#">View details »</a></p>         
-            </div>
 
-            <div class="col-lg-4  g-5 mt-3 d-md-block d-flex flex-column align-items-center">
-              <a href="#" >
-                <img src="./assets/images/icons/KroengLogoIndex.png" alt="KROENG">
-              </a>
-                <h2 class="fw-normal">KROENG</h2>
-                <p class="text-md-start text-center">Komunitas Robotic Electrical Engineering Universitas Syiah Kuala</p>
-                <p ><a class="btn btn-secondary" href="#">View details »</a></p>
-                   
-            </div>
-          </div>
-        </div>
-        
-    
-    
-      <!-- FOOTER -->
-    </main>
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <img src="./assets/images/icons/HimatektroLogo.png" alt="himatektro logo" class="bi" style="width: 30px;">
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Copyright: HIMATEKTRO</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </footer>
+  <main>
+    <div class="container" id="list-berita">
+
     </div>
+    
+  </main>
+  <div class="container my-5">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center pagination-lg">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="container">
+    
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="./assets/images/icons/HimatektroLogo.png" alt="himatektro logo" class="bi" style="width: 30px;">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Copyright: HIMATEKTRO</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/berita-list.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
