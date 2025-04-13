@@ -9,23 +9,22 @@
     "@popperjs/core": "^2.11.8"
   },
   "devDependencies": {
-    "standard-version": "^9.5.0",
-    "auto-changelog": "^2.4.0"
+    "standard-version": "^9.5.0"
   },
   "scripts": {
-    "release": "standard-version",
-    "changelog": "auto-changelog -p && git add CHANGELOG.md"
+    "release": "standard-version"
   },
   "standard-version": {
-    "scripts": {
-      "prerelease": "npm run changelog"
-    }
-  },
-  "auto-changelog": {
-    "output": "CHANGELOG.md",
-    "template": "keepachangelog",
-    "unreleased": true,
-    "commitLimit": false
+    "types": [
+      {"type": "feat", "section": "Features"},
+      {"type": "fix", "section": "Bug Fixes"},
+      {"type": "chore", "hidden": true},
+      {"type": "docs", "section": "Documentation"},
+      {"type": "style", "section": "Styling"},
+      {"type": "refactor", "section": "Code Refactoring"},
+      {"type": "perf", "section": "Performance Improvements"},
+      {"type": "test", "section": "Tests"}
+    ]
   },
   "keywords": [],
   "author": "",
