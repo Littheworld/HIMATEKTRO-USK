@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Fetch data dari API Picsum
     fetch("https://picsum.photos/v2/list")
         .then(response => {
             if (!response.ok) {
@@ -8,15 +9,13 @@ $(document).ready(function () {
             return response.json()
         })
         .then(data => {  
-            console.log(data)
             let id_baris = 0
             const container = $("#list-berita")
             container.empty()
             let rangkaBaris = `
-                <div class="row gx-3 gy-3 justify-content-center" id = "id_${id_baris}" ></div>`
+                <div class="row gx-4 gy-4 justify-content-center" id = "id_${id_baris}" ></div>`
             container.append(rangkaBaris)
             data.forEach((el, index) => {
-                console.log(el.id)
                 const rangkaKolom = `
                 <div class="col-sm-12 col-md-6 mb-sm-3 ">
                      <div class="card custom-card">
@@ -39,7 +38,6 @@ $(document).ready(function () {
                 </div>`
                 $(`#id_${id_baris}`).append(rangkaKolom)
                 if ((index + 1 ) % 2  === 0){
-                    console.log("xxx" + id_baris)
                     id_baris ++
                     let rangkaBaris = `
                         <div class="row gx-4 gy-4 justify-content-center" id = "id_${id_baris}" >
@@ -64,18 +62,23 @@ $(document).ready(function () {
 })
 
 $(document).ready(function() {
-    // Format dan tanggal
+    /**
+     * Format tanggal hari ini
+     * @returns {string} tanggal hari ini dalam format bahasa indonesia
+     */
     function formatCurrentDate() {
         const now = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const options = {
+            weekday: 'long', // nama hari dalam bahasa indonesia
+            year: 'numeric', // tahun dalam format angka
+            month: 'long', // nama bulan dalam bahasa indonesia
+            day: 'numeric' // hari dalam format angka
+        };
         return now.toLocaleDateString('id-ID', options);
     }
     
     // Update header
     $('.berita-date').text(formatCurrentDate());
-    
-   
-    
     
     // tag animation
     $('.tag').hover(

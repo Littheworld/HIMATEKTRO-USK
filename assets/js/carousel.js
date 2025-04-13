@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  // Fetch carousel data
+  /**
+   * Mendapatkan data carousel dan menginisialisasi carousel bootstrap.
+   */
+  
+  // Ambil data carousel
   fetch("../../data-homepage.json")
     .then(response => response.json())
     .then(dataFound => {
@@ -7,12 +11,16 @@ $(document).ready(function() {
       const indicators = $("#header-carousel .carousel-indicators");
       let data = dataFound.datalist.carousel;
       
+      // Kosongkan indikator dan container
       indicators.empty();
       container.empty(); 
+
+      // Iterasi setiap gambar dalam data
       data.forEach((image, index) => {
         const active = index === 0 ? "active" : "";
         const current = index === 0 ? "true" : "false";
         
+        // Tambahkan tombol indikator
         indicators.append(`
           <button type="button" 
                   data-bs-target="#header-carousel" 
@@ -23,6 +31,7 @@ $(document).ready(function() {
           </button>
         `);
         
+        // Tambahkan elemen gambar ke dalam carousel
         const imgElement = `
           <div class="carousel-item ${active}">
             <img src="${image.imgpath}" 
@@ -57,6 +66,7 @@ $(document).ready(function() {
         container.append(imgElement);
       });
       
+      // Inisialisasi carousel bootstrap jika elemen carousel ada
       const carousel = $('#header-carousel');
       if (carousel.length) {
         new bootstrap.Carousel(carousel); 

@@ -4,5 +4,9 @@
     "jquery": "^3.7.1",
     "@popperjs/core": "^2.11.8"
 
-  }
+  },
+  "scripts": {
+  "changelog": "auto-changelog -p"
+}
+
 }
