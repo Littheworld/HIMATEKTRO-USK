@@ -1,12 +1,33 @@
 {
+  "name": "himatektro-usk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "@popperjs/core": "^2.11.8"
-
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "auto-changelog": "^2.4.0"
   },
   "scripts": {
-  "changelog": "auto-changelog -p"
-}
-
+    "release": "standard-version",
+    "changelog": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run changelog"
+    }
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
