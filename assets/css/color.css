@@ -1,8 +1,8 @@
 
 /* primary */
 :root, [data-bs-theme="light"]{
-  
   --text-color: #1d1d1d;
+  --text-secondary: #5b5b5b; /* Warna sub text untuk light mode */
   --bg-color: #e3e6f0;
   --bs-primary: #9EC5FE; 
   --bs-secondary: #485F77; 
@@ -12,8 +12,8 @@
 }
 
 [data-bs-theme="dark"] {
-  
   --text-color: #ffffff;
+  --text-secondary: #b0b0b0; /* Warna sub text untuk dark mode */
   --bg-color: #021626;
   --bs-primary: #021626;
   --bs-secondary: #485F77;
