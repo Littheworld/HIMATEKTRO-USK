@@ -1,15 +1,7 @@
-:root {
-    --golden: 1.68;
-    /* Typography scale based on golden ratio */
-    --base-font-size: 1rem;
-    --scale-sm: calc(var(--base-font-size) / var(--golden));        /* ~0.595rem */
-    --scale-md: var(--base-font-size);                              /* 1rem */
-    --scale-lg: calc(var(--base-font-size) * var(--golden));        /* ~1.68rem */
-    --scale-xl: calc(var(--base-font-size) * var(--golden) * var(--golden));  /* ~2.82rem */
-    --scale-xxl: calc(var(--base-font-size) * var(--golden) * var(--golden) * var(--golden));  /* ~4.74rem */
-  }
+
   
   .custom-card {
+    font-weight: 600;
       width: 90%;
       transition: transform 0.3s ease;
       background-color: var(--bs-card-bg);
@@ -81,7 +73,7 @@
   
   /* Header */
   .berita-header {
-      padding: 6rem 0 2rem;
+      padding: 6rem 0 2rem 3rem;
       position: relative;
       overflow: hidden;
       background-color: var(--bg-color);
@@ -142,7 +134,6 @@
       font-size: var(--scale-lg);
       max-width: 600px;
       margin-bottom: 2rem;
-      font-weight: 300;
       color: var(--text-secondary);
       line-height: var(--golden);
   }
@@ -287,118 +278,126 @@
       position: relative;
   }
   
-  /* Organize content below potong-berita-header */
-  .head-page-berita .writer-social-container {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-  }
+/* Organize content below potong-berita-header */
+.head-page-berita .writer-social-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#isi-berita{
+    width: calc(var(--golden) * (1/4 * 1400px));
+    margin: 0 0 0 calc(var(--golden) * (1/24 * 1400px));
+
+}
   
-  @media (max-width: 768px) {
-      .head-page-berita .row {
-          flex-direction: column;
-      }
-      
-      .head-page-berita .col {
-          width: 100%;
-          margin-bottom: 20px;
-      }
-      
-      .head-page-berita .site-title {
-          font-size: var(--scale-lg);
-      }
-      
-      .potong-berita-header {
-          position: relative;
-          width: 100%;
-      }
-  }
-  
-  /* Media queries */
-  @media (max-width: 782px) {
-      .berita-header {
-          padding: 5rem 0 1.5rem;
-      }
-  
-      .berita-header #logo{
-          display: none;
-      }
-      
-      .site-title {
-          font-size: var(--scale-xl);
-      }
-      
-      .site-description {
-          font-size: var(--scale-md);
-      }
-  }
-  
-  @media (max-width: 420px) {
-      .berita-header {
-          padding: 4.5rem 0 1rem;
-      }
-      
-      .site-title {
-          font-size: var(--scale-lg);
-      }
-  }
-  
-  @media (max-width: 1199px) {
-      .custom-card{
-          width: 100%;
-      }
-      .custom-card img{
-          width: 100%;
-          height: 20rem;
-      }
-  }
-  
-  @media (max-width: 996px) {
-      .custom-card img{
-          width: 100%;
-          height: 100%;
-      }
-  }
-  
-  /* Add base typography settings for overall document */
-  body {
-      line-height: var(--golden);
-      font-size: var(--scale-md);
-  }
-  
-  h1 {
-      font-size: var(--scale-xxl);
-      line-height: calc(var(--golden) * 0.9);
-      margin-bottom: 1rem;
-  }
-  
-  h2 {
-      font-size: var(--scale-xl);
-      line-height: calc(var(--golden) * 0.9);
-      margin-bottom: 0.8rem;
-  }
-  
-  h3 {
-      font-size: var(--scale-lg);
-      line-height: var(--golden);
-      margin-bottom: 0.7rem;
-  }
-  
-  h4 {
-      font-size: calc(var(--scale-md) * 1.2);
-      line-height: var(--golden);
-      margin-bottom: 0.6rem;
-  }
-  
-  h5, h6 {
-      font-size: var(--scale-md);
-      line-height: var(--golden);
-      margin-bottom: 0.5rem;
-  }
-  
-  p {
-      font-size: var(--scale-md);
-      line-height: var(--golden);
-      margin-bottom: 1rem;
-  }
+
+
+@media (max-width: 768px) {
+    .head-page-berita .row {
+        flex-direction: column;
+    }
+    
+    .head-page-berita .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .head-page-berita .site-title {
+        font-size: var(--scale-lg);
+    }
+    
+    .potong-berita-header {
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* Media queries */
+@media (max-width: 782px) {
+    .berita-header {
+        padding: 5rem 0 1.5rem;
+    }
+
+    .berita-header #logo{
+        display: none;
+    }
+    
+    .site-title {
+        font-size: var(--scale-xl);
+    }
+    
+    .site-description {
+        font-size: var(--scale-md);
+    }
+}
+
+@media (max-width: 420px) {
+    .berita-header {
+        padding: 4.5rem 0 1rem;
+    }
+    
+    .site-title {
+        font-size: var(--scale-lg);
+    }
+}
+
+@media (max-width: 1199px) {
+    .custom-card{
+        width: 100%;
+    }
+    .custom-card img{
+        width: 100%;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 996px) {
+    .custom-card img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Add base typography settings for overall document */
+body {
+    line-height: var(--golden);
+    font-size: var(--scale-md);
+}
+
+h1 {
+    font-size: var(--scale-xxl);
+    line-height: calc(var(--golden) * 0.9);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: var(--scale-xl);
+    line-height: calc(var(--golden) * 0.9);
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-size: var(--scale-lg);
+    line-height: var(--golden);
+    margin-bottom: 0.7rem;
+}
+
+h4 {
+    font-size: calc(var(--scale-md) * 1.2);
+    line-height: var(--golden);
+    margin-bottom: 0.6rem;
+}
+
+h5, h6 {
+    font-size: var(--scale-md);
+    line-height: var(--golden);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: var(--scale-md);
+    line-height: var(--golden);
+    margin-bottom: 1rem;
+}
