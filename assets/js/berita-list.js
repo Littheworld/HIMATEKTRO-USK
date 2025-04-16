@@ -2,7 +2,7 @@ let lorem_text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliq
 
 let tags = ["penting", "menang","himpunan", "event", "umum"]
 
-let titleBerita = "Network response was okeh"
+let titleBerita = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
 $(document).ready(function () {
     // Fetch data dari API Picsum
     const fetchPicsum = async () => {
@@ -47,7 +47,7 @@ $(document).ready(function () {
                     <div class="tags-container">
                         ${selectTags(tags)}
                     </div>
-                        <h5 class="card-title">${titleBerita}</h5>
+                        <h3 class="card-title">${titleBerita}</h3>
                         <p class="card-text">${lorem_text}</p>
                         <div class="d-grid gap-2 d-md-block">
                             <a href="./berita-page.html" class="btn btn-primary ">Baca Lebih Lanjut</a>
