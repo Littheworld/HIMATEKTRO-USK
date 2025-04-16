@@ -7,32 +7,31 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* ganti nama, styling baru ([ada599f](https://github.com/Littheworld/HIMATEKTRO-USK/commit/ada599f37d4ea3e74f8220b8ed5817f095579925))
-* page berita ([4721d86](https://github.com/Littheworld/HIMATEKTRO-USK/commit/4721d862d778afaea3c77d1e3a95f7e4643667a6))
-* pembuatan injector ([22f0db8](https://github.com/Littheworld/HIMATEKTRO-USK/commit/22f0db847b5c4b3331b5d35ee16c30cfe9bd9d0b))
-* penambahan page isi berita ([59df06e](https://github.com/Littheworld/HIMATEKTRO-USK/commit/59df06efd3b78296b152fc40977700bd40e3a628))
+* ganti nama, styling baru 
+* page berita
+* pembuatan injector 
+* penambahan page isi berita
 
 
 ### Bug Fixes
 
-* perbaikan button ([6fe360b](https://github.com/Littheworld/HIMATEKTRO-USK/commit/6fe360baefe68fe6f096038a63ce9b198b7cdba6))
-* perubahan warna sesuai himpunan ([3a9b50a](https://github.com/Littheworld/HIMATEKTRO-USK/commit/3a9b50a4a796aeb2adc7a6eb9384ddc624a445d9))
-* rilis itu per patch ([499c6ee](https://github.com/Littheworld/HIMATEKTRO-USK/commit/499c6eedfc111ac6d99aed45e137b987b9700274))
+* perbaikan button
+* perubahan warna sesuai himpunan 
+* rilis itu per patch 
 
 
 ### Tests
 
-* banyak panjang title berit ([21931b8](https://github.com/Littheworld/HIMATEKTRO-USK/commit/21931b8094a0bdd6d3da60baf71d538cb901dc0f))
+* banyak panjang title berita
 
 
 ### Styling
 
-* ubah button yg tidak perlu ([5a37269](https://github.com/Littheworld/HIMATEKTRO-USK/commit/5a3726953b9ea495654f1708d5a1d53f18e0f6d6))
-
+* ubah button yg tidak perlu
 
 ### Documentation
 
-* buat panduan commit ([4743178](https://github.com/Littheworld/HIMATEKTRO-USK/commit/4743178eb69b2cbd6e1b7a3f4320e5024f2e8f46))
+* buat panduan commit
 
 ### [1.0.3](https://github.com/Littheworld/HIMATEKTRO-USK/compare/v1.0.2...v1.0.3) (2025-04-15)
 
@@ -41,7 +40,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* perbaiki konfigurasi changelog ([39496f3](https://github.com/Littheworld/HIMATEKTRO-USK/commit/39496f3ee1b46ace7c276262b7db46b8b332ee76))
+* perbaiki konfigurasi changelog 
 
 ## [1.0.0] - 2025-04-13
 

@@ -1,6 +1,6 @@
 {
   "name": "himatektro-usk",
-  "version": null,
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -12,7 +12,8 @@
     "standard-version": "^9.5.0"
   },
   "scripts": {
-    "release": "standard-version --release-as patch"
+    "releasePatch": "standard-version --release-as patch",
+    "releaseMinor": "standard-version --release-as minor"
   },
   "standard-version": {
     "types": [
