@@ -2,14 +2,21 @@
 /* primary */
 :root, [data-bs-theme="light"]{
   --text-color: #1d1d1d;
-  --text-secondary: #5b5b5b; /* Warna sub text untuk light mode */
-  --bg-color: #e3e6f0;
-  --bs-primary: #9EC5FE; 
-  --bs-secondary: #485F77; 
+  --text-secondary: #2f2f2f; /* Warna sub text untuk light mode */
+  --bg-color: #e5e3e4;
+  --bs-primary: #6177a0; 
+  --bs-secondary: #5c7494; 
   --bs-tertiary: #E3F0E7; 
   --bs-body-bg: #FFFFFF; 
   --bs-body-color: #021626; 
 }
+
+/*
+#6177a0
+#e3f0e7
+#e5e3e4
+#5c7494
+*/
 
 [data-bs-theme="dark"] {
   --text-color: #ffffff;
@@ -25,7 +32,7 @@
 /* background */
 :root,[data-bs-theme="light"] {
   --bs-body-bg: #E3F0E7;  /*utama */
-  --bs-card-bg: #FFFFFF;  /*kartu */
+  --bs-card-bg: #5a7795;  /*kartu */
   --bs-modal-bg: #FFFFFF; /* modal */
   --bs-nav-bg: #9EC5FE;   /* navbar */
 }
@@ -71,7 +78,11 @@
   --btn-primary-text: #021626;
   --btn-primary-hover-bg: #485F77;
   --btn-primary-hover-text: #FFFFFF;
-  --btn-primary-border: #7AA6E0;
+  --btn-primary-focus-bg: #7EB0ED;
+  --btn-primary-focus-text: #021626;
+  --btn-primary-active-bg: #3B5169;
+  --btn-primary-active-text: #FFFFFF;
+  --btn-primary-border: #e3f0e7;
   --btn-primary-shadow: rgba(122, 166, 224, 0.3);
 }
 
@@ -80,6 +91,10 @@
   --btn-primary-text: #FFFFFF;
   --btn-primary-hover-bg: #485F77;
   --btn-primary-hover-text: #E5E3E4;
+  --btn-primary-focus-bg: #043F4A;
+  --btn-primary-focus-text: #FFFFFF;
+  --btn-primary-active-bg: #05545F;
+  --btn-primary-active-text: #E5E3E4;
   --btn-primary-border: #064A56;
   --btn-primary-shadow: rgba(3, 40, 48, 0.5);
 }
@@ -91,6 +106,10 @@
   --btn-secondary-text: #303030;
   --btn-secondary-hover-bg: #6C757D;
   --btn-secondary-hover-text: #FFFFFF;
+  --btn-secondary-focus-bg: #D1CED0;
+  --btn-secondary-focus-text: #303030;
+  --btn-secondary-active-bg: #5A6268;
+  --btn-secondary-active-text: #FFFFFF;
   --btn-secondary-border: #D1D1D1;
   --btn-secondary-shadow: rgba(108, 117, 125, 0.3);
 }
@@ -100,6 +119,10 @@
   --btn-secondary-text: #E5E3E4;
   --btn-secondary-hover-bg: #4F585F;
   --btn-secondary-hover-text: #FFFFFF;
+  --btn-secondary-focus-bg: #454C53;
+  --btn-secondary-focus-text: #FFFFFF;
+  --btn-secondary-active-bg: #566067;
+  --btn-secondary-active-text: #FFFFFF;
   --btn-secondary-border: #4A5258;
   --btn-secondary-shadow: rgba(58, 64, 70, 0.5);
 }
