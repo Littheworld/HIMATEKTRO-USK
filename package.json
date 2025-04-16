@@ -12,8 +12,7 @@
     "standard-version": "^9.5.0"
   },
   "scripts": {
-    "releasePatch": "standard-version --release-as patch",
-    "releaseMinor": "standard-version --release-as minor"
+    "releasePatch": "standard-version"
   },
   "standard-version": {
     "types": [
