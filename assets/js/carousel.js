@@ -44,16 +44,13 @@ $(document).ready(function() {
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-md-8 col-lg-6 bg-dark bg-opacity-50 p-4 rounded-3">
-                    <h2 class="display-6 fw-bold text-white mb-3">Slide ${index + 1} Headline</h2>
+                    <h2 class="display-6 fw-bold text-white mb-3 headline-carousel">Slide ${index + 1} Headline</h2>
                     <p class="lead text-white-75 mb-4">
                       ${image.imgdesc[index]}
                     </p>
                     <div class="d-flex gap-3 align-items-center">
                       <a href="${image.imglink}" class="btn btn-primary btn-lg px-4 py-2">
-                        Get Started
-                      </a>
-                      <a href="#" class="link-light text-decoration-none">
-                        Learn More
+                        Lihat berita
                       </a>
                     </div>
                   </div>
