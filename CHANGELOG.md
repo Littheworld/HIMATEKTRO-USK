@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Littheworld/HIMATEKTRO-USK/compare/v1.0.5...v1.1.0) (2025-04-19)
+
+
+### Features
+
+* fetching data dari json berita list ([4f3632f](https://github.com/Littheworld/HIMATEKTRO-USK/commit/4f3632fcaceb7802c49694b259a37424f7bfc67e))
+* fetching data dari json berita page ([285bed1](https://github.com/Littheworld/HIMATEKTRO-USK/commit/285bed17c6c03e5f7446f474e7ee6f75c619de8d))
+* tablet responsive ([2496ebd](https://github.com/Littheworld/HIMATEKTRO-USK/commit/2496ebd98a857475f6970bc985a2581f5c0d81a2))
+
+
+### Bug Fixes
+
+* buat rilis easy ([0ac2d10](https://github.com/Littheworld/HIMATEKTRO-USK/commit/0ac2d10e28969130790b07acc46596a2be9958de))
+* kebanyakan gambar ([bbb2198](https://github.com/Littheworld/HIMATEKTRO-USK/commit/bbb219837f731e5997f4a10e482bcff557c3f528))
+* perbaikan release script ([c7ccc6e](https://github.com/Littheworld/HIMATEKTRO-USK/commit/c7ccc6e67f74359f8b48a247d9dd4319cc9acdbb))
+* vercel path ([6b0698a](https://github.com/Littheworld/HIMATEKTRO-USK/commit/6b0698ab236f17f73a70eb229bf9892b1a0ab9b2))
+
+
+### Tests
+
+* image contoh saja ([dee39f7](https://github.com/Littheworld/HIMATEKTRO-USK/commit/dee39f7a4228daa7ba56280ea6cf936445a3fbf2))
+
 ### [1.0.5](https://github.com/Littheworld/HIMATEKTRO-USK/compare/v1.0.3...v1.0.5) (2025-04-16)
 
 
