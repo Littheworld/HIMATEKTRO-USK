@@ -37,13 +37,16 @@
       padding: 4px 12px;
       font-size: var(--scale-sm);
       font-weight: 500;
-      text-decoration: none;
-      transition: background-color 0.2s, transform 0.2s;
+      text-decoration: none;;
+      transition: opacity 0.3s, transform 0.2s;
+  }
+
+  #tags-page .tag {
+    font-size: var(--scale-md);
   }
   
   .tag:hover {
-      background-color: var(--tag-hover-bg);
-      color: var(--tag-hover-text);
+      opacity: 0.7; 
       transform: translateY(-2px);
   }
   
@@ -66,9 +69,9 @@
   }
   
   .tag-event {
-      background-color: #836129c9;
+      background-color: var(--navbar-btn-orange);
       color: white;
-      border-color: var(--navbar-btn-orange);
+      border-color: #836129c9;
   }
   
   /* Header */
@@ -181,7 +184,7 @@
   }
   
   .head-page-berita .image-caption {
-      font-size: calc(var(--scale-sm) * 0.9);
+      font-size: calc(var(--scale-sm) * 1.2);
       color: var(--text-secondary);
       margin-top: 0.5rem;
   }
@@ -220,8 +223,9 @@
   }
   
   .head-page-berita .site-description {
-      font-size: var(--scale-lg);
+      font-size: var(--scale-xl);
       font-weight: 400;
+      max-width: 100%;
       color: var(--text-secondary);
       line-height: var(--golden);
       margin-bottom: 0;
@@ -305,13 +309,17 @@
     }
     
     .head-page-berita .site-title {
-        font-size: var(--scale-lg);
+        font-size: var(--scale-xl);
     }
     
     .potong-berita-header {
         position: relative;
         width: 100%;
     }
+    #isi-berita{ 
+        margin: auto;
+        padding: 0 var(--space-xl);
+        width: 100%;}
 }
 
 /* Media queries */
@@ -343,13 +351,29 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
     .custom-card{
         width: 100%;
     }
     .custom-card img{
         width: 100%;
         height: 20rem;
+    }
+    
+    .head-page-berita .site-title {
+        font-size: var(--scale-xl);
+    }
+    
+    .head-page-berita .site-description {
+        font-size: calc(var(--scale-md) * 1.8);
+    }
+
+    .head-page-berita .row{
+        flex-direction: column;
+    }
+    .potong-berita-header {
+        position: relative;
+        width: 100%;
     }
 }
 
