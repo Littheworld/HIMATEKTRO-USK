@@ -18,12 +18,12 @@
 - [ ] Hubungkan Dokumen ke google drive
 - [x] Buat injector untuk lebih clean
 - [x] Buat contoh data untuk permudah backend
-- [ ] buat agar bisa masuk dari data ke html
-- [ ] buat kalender
+- [x] buat agar bisa masuk dari data ke html
+
 
 ## UI/UX
-- [ ] Responsive layout untuk tablet
+- [x] Responsive layout untuk tablet
 - [ ] in scroll animation effect
-- [ ] Buat isi tulisan
-- [ ] tipografi
+- [x] Buat isi tulisan
+- [x] tipografi
 - [x] Atur dengn memanfaatkan golden ratio
