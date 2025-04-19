@@ -1,0 +1,48 @@
+{
+    "datalist": [
+        {
+            "titleBerita": "HIMATEKTRO USK Raih Juara Umum Dalam Kompetisi Coding Nasional 2025",
+            "descBerita": "Himpunan Mahasiswa Teknik Elektro USK berhasil meraih gelar juara umum dalam ajang Kompetisi Coding Nasional yang diselenggarakan di Jakarta pada 15 April 2025.",
+            "imgBerita": {
+                "img": "https://picsum.photos/600/400",
+                "captionImg": "Tim HIMATEKTRO USK menerima trofi juara umum dari panitia kompetisi",
+                "placeHolder": "HIMATEKTRO-juara-coding-placeholder"
+            },
+            "tags": [
+                "penting",
+                "kemenangan",
+                "himpunan",
+                "event",
+                "umum",
+                "teknologi"
+            ]
+        },
+        {
+            "penulis": "Budi Santoso",
+            "tanggalDitulis": "17-04-2025",
+            "jamDitulis": "14:30 WIB",
+            "medsosPenulis": {
+                "twitter": "@budisantoso_tech",
+                "instagram": "@budisantoso.tech",
+                "facebook": "budisantoso.jurnalis",
+                "tiktok": "@budisantosomedia",
+                "blog": "https://budisantoso.medium.com"
+            }
+        },
+        {
+            "isiBerita": [
+                "JAKARTA - Himpunan Mahasiswa Teknik Teknik Elektro (HIMATEKTRO) Universitas Syiah Kuala (USK) berhasil menorehkan prestasi membanggakan dengan menyabet gelar juara umum dalam Kompetisi Coding Nasional 2025 yang diselenggarakan di Jakarta Convention Center pada Minggu (15/4/2025).",
+                "Tim yang beranggotakan tiga mahasiswa semester 6, yakni Ahmad Rizky, Dewi Purnama, dan Reza Pratama berhasil menyelesaikan seluruh tantangan pemrograman dengan waktu tercepat dan solusi paling efisien. Mereka mengalahkan 32 tim dari berbagai universitas ternama di Indonesia.",
+                "\"Persiapan kami cukup intensif selama dua bulan terakhir. Kami berlatih hampir setiap hari dan melakukan simulasi kompetisi setiap minggunya,\" ungkap Ahmad Rizky, ketua tim HIMATEKTRO USK kepada wartawan.",
+                {
+                    "img": "https://picsum.photos/300/200",
+                    "captionImg": "Tim HIMATEKTRO USK (dari kiri ke kanan: Ahmad Rizky, Dewi Purnama, dan Reza Pratama) saat sesi pemrograman",
+                    "placeHolder": "tim-HIMATEKTRO-kompetisi-placeholder"
+                },
+                "Kemenangan ini semakin bermakna karena tahun lalu HIMATEKTRO USK harus puas berada di peringkat ketiga. Kepala Departemen Teknik Teknik Elektro USK, menyampaikan apresiasinya terhadap prestasi ini dan menyatakan bahwa keberhasilan ini merupakan bukti kualitas pendidikan di USK.",
+                "Sebagai juara umum, tim HIMATEKTRO USK membawa pulang hadiah utama berupa uang tunai sebesar Rp 50 juta, perangkat komputer terbaru, dan kesempatan magang di perusahaan teknologi multinasional. Kompetisi Coding Nasional sendiri merupakan ajang tahunan yang diselenggarakan oleh Asosiasi Pengembang Teknologi Indonesia bekerja sama dengan Kementerian Komunikasi dan Teknik Elektro.",
+                "AMIN"
+            ]
+        }
+    ]
+}
