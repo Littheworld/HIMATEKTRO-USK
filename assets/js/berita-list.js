@@ -1,22 +1,19 @@
-let lorem_text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eaque delectus eveniet quidem! Debitis illum eum quae odio dignissimos dolore repellendus libero, minima eius hic porro nam dicta iste pariatur!"
 
-let tags = ["penting", "menang","himpunan", "event", "umum"]
 
-let titleBerita = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
 $(document).ready(function () {
-    // Fetch data dari API Picsum
-    const fetchPicsum = async () => {
+    // Fetch data dari
+    const fetchData = async () => {
         try {
-            const response = await fetch("https://picsum.photos/v2/list")
+            const response = await fetch("./data-berita-list.json")
             if (!response.ok) {
                 const errorMessage = `Network response was not ok. Status Code: ${response.status}`
                 throw new Error(errorMessage)
             }
 
-            const data = await response.json()
-            renderPicsum(data)
+            const dataFromServer = await response.json()
+            renderData(dataFromServer)
         } catch (error) {
-            console.error("Error fetching the image list:", error);
+            console.error("Error fetching the data list:", error);
             $("#list-berita").html(
                 `<div class="alert alert-danger d-flex align-items-center" role="alert">
                     <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:">
@@ -31,24 +28,29 @@ $(document).ready(function () {
     }
 
     // Render data
-    const renderPicsum = (data) => {
+    const renderData = (data) => {
         const container = $("#list-berita")
         container.empty()
         let id_baris = 0
         const rangkaBaris = `
             <div class="row gx-4 gy-4 justify-content-center" id = "id_${id_baris}" ></div>`
         container.append(rangkaBaris)
-        data.forEach((el, index) => {
+        const dataList = data.datalist.beritaList
+        dataList.forEach((item, index) => {
+            const tags = item.tags
+            const titleBerita = item.berita.titleBerita
+            const deskripsiBerita = item.berita.descBerita
+            const imageBerita = item.imgBerita
             const rangkaKolom = `
             <div class="col-sm-12 col-md-6 mb-sm-3 ">
                  <div class="card custom-card">
-                    <img src="${el.download_url}" class="card-img-top" alt="${el.author}'s image" loading="lazy">
+                    <img src="${imageBerita.img}" class="card-img-top" alt="${imageBerita.placeHolder}'s image" loading="lazy">
                     <div class="card-body">
                     <div class="tags-container">
                         ${selectTags(tags)}
                     </div>
                         <h3 class="card-title">${titleBerita}</h3>
-                        <p class="card-text">${lorem_text}</p>
+                        <p class="card-text">${deskripsiBerita}</p>
                         <div class="d-grid gap-2 d-md-block">
                             <a href="./berita-page.html" class="btn btn-primary ">Baca Lebih Lanjut</a>
                         </div>
@@ -66,7 +68,7 @@ $(document).ready(function () {
         });
     }
 
-    fetchPicsum()
+    fetchData()
 })
 
 /**
@@ -76,9 +78,9 @@ $(document).ready(function () {
  */
 function selectTags(tagList) {
     // Daftar tag yang tersedia
-    const availableTags = {
+    const TagsTersedia = {
       "penting": '<a href="#" class="tag tag-penting">penting</a>',
-      "menang": '<a href="#" class="tag tag-tropi">menang</a>',
+      "kemenangan": '<a href="#" class="tag tag-tropi">menang</a>',
       "himpunan": '<a href="#" class="tag tag-hima">himpunan</a>',
       "event": '<a href="#" class="tag tag-event">event</a>',
       "umum": '<a href="#" class="tag">umum</a>'
@@ -92,7 +94,7 @@ function selectTags(tagList) {
     
     // Jika tidak ada tag yang diberikan, kembalikan tag umum
     if (!tagList || tagList.length === 0) {
-      return availableTags["umum"];
+      return TagsTersedia["umum"];
     }
     
     // Proses setiap tag dari list
@@ -100,12 +102,12 @@ function selectTags(tagList) {
       // Jika tag belum ditambahkan ke hasil
       if (!addedTags.has(tag)) {
         // Cek apakah tag tersedia
-        if (availableTags[tag]) {
-          result += availableTags[tag] + '\n';
+        if (TagsTersedia[tag]) {
+          result += TagsTersedia[tag] + '\n';
         } else {
           // Jika tag tidak tersedia, gunakan tag umum jika belum ditambahkan
           if (!addedTags.has("umum")) {
-            result += availableTags["umum"] + '\n';
+            result += TagsTersedia["umum"] + '\n';
             addedTags.add("umum");
           }
         }

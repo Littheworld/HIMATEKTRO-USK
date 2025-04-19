@@ -1,0 +1,81 @@
+{
+    "datalist": {
+        "beritaList": [{
+            "tags": [
+                "penting",
+                "kemenangan",
+                "himpunan",
+                "event",
+                "umum"
+            ],
+            "imgBerita": {
+                "img": "./assets/images/img_cth/2a176cf6-5eae-4269-b24f-95cfb4705c04.jpeg",
+                "placeHolder": "Foto kegiatan utama"
+            },
+            "berita": {
+                "titleBerita": "HIMATEKTRO USK Raih Juara Umum dalam Kompetisi Programming Nasional 2025",
+                "descBerita": "Tim mahasiswa berhasil mengalahkan 50 universitas lain dalam ajang bergengsi tahunan"
+            }
+        }, {
+            "tags": [
+                "penting"
+            ],
+            "imgBerita": {
+                "img": "assets/images/img_cth/1ed0da1c-d3ba-4388-8d82-ce88c02ca274.jpeg",
+                "placeHolder": "Foto seminar kewirausahaan"
+            },
+            "berita": {
+                "titleBerita": "Seminar Kewirausahaan Teknologi Dihadiri Ratusan Mahasiswa",
+                "descBerita": "Para pengusaha sukses berbagi pengalaman dalam mendirikan startup berbasis teknologi"
+            }
+        }, {
+            "tags": [
+                "kemenangan"
+            ],
+            "imgBerita": {
+                "img": "assets/images/img_cth/e6c536f9-10b7-4a54-a5d1-5105e388db3c.jpeg",
+                "placeHolder": "Foto tim pemenang hackathon"
+            },
+            "berita": {
+                "titleBerita": "Tim Robotika Kampus Menang Kompetisi Internasional di Singapura",
+                "descBerita": "Inovasi robot pendeteksi polusi udara membawa pulang hadiah utama senilai Rp 50 juta"
+            }
+        }, {
+            "tags": [
+                "himpunan"
+            ],
+            "imgBerita": {
+                "img": "assets/images/img_cth/539ea03b-8745-471c-891f-ba352b12524f.jpeg",
+                "placeHolder": "Foto acara himpunan"
+            },
+            "berita": {
+                "titleBerita": "Himpunan Mahasiswa Merayakan Dies Natalis ke-20 dengan Berbagai Kegiatan Sosial",
+                "descBerita": "Rangkaian acara meliputi donor darah, bakti sosial, dan webinar pendidikan untuk masyarakat umum"
+            }
+        }, {
+            "tags": [
+                "event"
+            ],
+            "imgBerita": {
+                "img": "assets/images/img_cth/642c041a-02d7-4d79-86b4-c9fdc1eff271.jpeg",
+                "placeHolder": "Foto kegiatan workshop"
+            },
+            "berita": {
+                "titleBerita": "Workshop UI/UX Design Digelar Minggu Depan, Pendaftaran Masih Dibuka",
+                "descBerita": "Para profesional dari perusahaan teknologi terkemuka akan hadir sebagai pembicara utama"
+            }
+        }, {
+            "tags": [
+                "umum", "kemenangan"
+            ],
+            "imgBerita": {
+                "img": "assets/images/img_cth/Warriors.jpeg",
+                "placeHolder": "Foto tim olahraga kampus"
+            },
+            "berita": {
+                "titleBerita": "Tim Basket Kampus Juara Liga Mahasiswa Regional Barat 2025",
+                "descBerita": "Kemenangan dramatis di detik-detik terakhir mengantarkan tim pada gelar juara pertama sejak 5 tahun terakhir"
+            }
+        }]
+    }
+}
