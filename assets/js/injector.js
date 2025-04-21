@@ -30,7 +30,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 700px;">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                 <li class="nav-item mx-2">
                   <a class="nav-link" href="./index.html">Home</a>
                 </li>

@@ -302,6 +302,8 @@
     .head-page-berita .row {
         flex-direction: column;
     }
+
+    .head-page-berita{ padding: var(--scale-md);}
     
     .head-page-berita .col {
         width: 100%;
@@ -309,9 +311,13 @@
     }
     
     .head-page-berita .site-title {
-        font-size: var(--scale-xl);
+        font-size: calc(var(--scale-xl)*0.8);
     }
     
+    .head-page-berita .site-description {
+        font-size: calc(var(--scale-md)*0.8);
+    }
+
     .potong-berita-header {
         position: relative;
         width: 100%;
